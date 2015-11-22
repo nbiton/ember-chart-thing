@@ -1,0 +1,16 @@
+<div class="chart-vis-container"></div>
+<div class="chart-vis__controls">
+    <form action="#">
+        {{#each formattedData as |dataSet|}}
+            <p>
+              {{md-check name=dataSet.key checked=dataSet.checked}}
+            </p>
+        {{/each}}
+
+      {{md-switch
+        checked=isScatter
+        onLabel="Scatter"
+        offLabel="Line"}}
+    </form>
+</div>
+{{yield}}

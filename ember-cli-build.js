@@ -7,6 +7,9 @@ module.exports = function(defaults) {
     // Add options here
   });
 
+  app.import('bower_components/d3/d3.js');
+
+  app.import('bower_components/nvd3/build/nv.d3.css');
   // Use `app.import` to add additional libraries to the generated
   // output files.
   //

@@ -1,0 +1,9 @@
+<p>Pick a chart:</p>
+
+<div class="collection">
+    {{#each chartsData as |item|}}
+      {{#link-to 'charts.chart' item.id class="collection-item"}}{{item.name}}{{/link-to}}
+    {{/each}}
+</div>
+
+{{yield}}

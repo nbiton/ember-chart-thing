@@ -1,0 +1,15 @@
+.chart-vis-container {
+  height: 400px;
+}
+
+.chart-vis__controls {
+  padding-left: 2rem;
+}
+
+
+// NVD3 style override
+.nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point:not(.hover) {
+  fill-opacity: 1;
+  stroke-opacity: 1;
+  stroke-width: 2;
+}
